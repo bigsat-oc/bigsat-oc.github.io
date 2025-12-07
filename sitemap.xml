@@ -4,14 +4,20 @@
    <url>
        <loc>https://bigsat-oc.github.io/</loc>
    </url>
-   <!-- <url>
-       <loc>https://bigsat-oc.github.io/registration</loc>
+   <url>
+       <loc>https://bigsat-oc.github.io/keynote</loc>
    </url>
    <url>
-       <loc>https://bigsat-oc.github.io/program</loc>
+       <loc>https://bigsat-oc.github.io/events</loc>
    </url>
    <url>
-       <loc>https://bigsat-oc.github.io/directions</loc>
-   </url> -->
+       <loc>https://bigsat-oc.github.io/schedule</loc>
+   </url>
+   <url>
+       <loc>https://bigsat-oc.github.io/direction</loc>
+   </url>
+   <url>
+       <loc>https://bigsat-oc.github.io/team</loc>
+   </url>
 </urlset> 
 
