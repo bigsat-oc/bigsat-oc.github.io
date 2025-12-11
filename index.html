@@ -15,33 +15,47 @@
         <img src="assets/banner.png">
     </div>
 
-    <table class="navigation">
-        <tr>
-            <td class="navigation">
-                <a class="current" href=".">Home</a>
-            </td>
-            <td class="navigation">
-                <li>Event Details
-                  <ul>
-                    <li><a href="eventdetails/keynote.html">Keynote</a></li>
-                    <li><a href="eventdetails/concurrent-sess.html">Concurrent Sessions</a></li>
-                  </ul>
-                </li>
-            </td>
-            <td class="navigation">
-                <a href="schedule">Schedule</a>
-            </td>
-            <td class="navigation">
-                <a href="directions">Directions</a>
-            </td>
-            <td class="navigation">
-                <a href="team">About</a>
-            </td>
-            <td class="navigation">
-                <a href="https://bigsat-oc.github.io/bigsite-archive/">Past Events</a>
-            </td>
-        </tr>
-    </table>
+    <!-- <table class="navigation">
+      <tr>
+        <td class="navigation">
+          <a class="current" href=".">Home</a>
+        </td>
+    
+        <td class="navigation">
+          <ul class="nav-list">
+            <li>Event Details
+              <ul class="dropdown">
+                <li><a href="eventdetails/keynote.html">Keynote</a></li>
+                <li><a href="eventdetails/concurrent-sess.html">Concurrent Sessions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+    
+        <td class="navigation"><a href="schedule">Schedule</a></td>
+        <td class="navigation"><a href="directions">Directions</a></td>
+        <td class="navigation"><a href="team">About</a></td>
+        <td class="navigation"><a href="https://bigsat-oc.github.io/bigsite-archive/">Past Events</a></td>
+      </tr>
+    </table> -->
+
+    <div class="navbar">
+      <a href=".">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Event Details 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="eventdetails/keynote.html">Keynote</a>
+          <a href="eventdetails/concurrent-sess.html">Concurrent Sessions</a>
+        </div>
+      </div> 
+      <a href="schedule">Schedule</a>
+      <a href="directions">Directions</a>
+      <a href="team">About</a>
+      <a href="https://bigsat-oc.github.io/bigsite-archive/">Past Events</a>
+
+    </div>
 
     <h2 id="countdown"></h2>
 
