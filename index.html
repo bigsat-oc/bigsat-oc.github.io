@@ -5,76 +5,82 @@
     <base href=".">
     <link rel="shortcut icon" type="image/png" href="assets/logo.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <title>BiGSAT26 Conference Main Page</title>
+    <title>BiGSAT26 Home Page</title>
  
 </head>
 
 <body>
   
-    <div class="banner">
-        <img src="assets/banner.png">
+  <div class="banner">
+      <img src="assets/banner.png">
+  </div>
+
+  <div class="navbar">
+    <a href=".">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Event Details 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="eventdetails/keynote.html">Keynote</a>
+        <a href="eventdetails/concurrent-sess.html">Concurrent Sessions</a>
+      </div>
+    </div> 
+    <a href="schedule/schedule.html">Schedule</a>
+    <a href="directions/directions.html">Directions</a>
+    <div class="dropdown">
+      <button class="dropbtn">About
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="about/about.html">What is BiGSAT?</a>
+        <a href="about/oc.html">Organization Committee</a>
+        <a href="about/sponsors.html">Sponsors</a>
+      </div>
     </div>
+    <div class="dropdown">
+      <button class="dropbtn">Past Events
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href=".">2026</a>
+        <a href="https://bigsat-oc.github.io/bigsite-archive/">2016-2025 (BIG Research Day)</a>
+      </div>
+    </div> 
+  </div>
 
-    <table class="navigation">
-        <tr>
-            <td class="navigation">
-                <a class="current" href=".">Home</a>
-            </td>
-            <td class="navigation">
-                <li>Event Details
-                  <ul>
-                    <li><a href="eventdetails/keynote.html">Keynote</a></li>
-                    <li><a href="eventdetails/concurrent-sess.html">Concurrent Sessions</a></li>
-                  </ul>
-                </li>
-            </td>
-            <td class="navigation">
-                <a href="schedule">Schedule</a>
-            </td>
-            <td class="navigation">
-                <a href="directions">Directions</a>
-            </td>
-            <td class="navigation">
-                <a href="team">About</a>
-            </td>
-            <td class="navigation">
-                <a href="https://bigsat-oc.github.io/bigsite-archive/">Past Events</a>
-            </td>
-        </tr>
-    </table>
+  <h2 id="countdown"></h2>
 
-    <h2 id="countdown"></h2>
-
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Apr 16, 2026 08:00:00").getTime();
-        
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-        
-          // Get today's date and time
-          var now = new Date().getTime();
-            
-          // Find the distance between now and the count down date
-          var distance = countDownDate - now;
-            
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-          // Output the result in an element with id="demo"
-          document.getElementById("countdown").innerHTML = days + " days " + hours + " hours "
-          + minutes + " minutes " + seconds + " seconds until BiGSAT 2026";
-            
-          // If the count down is over, write some text 
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("countdown").innerHTML = "BiGSAT 2026 has started!";
-          }
-        }, 1000);
-    </script>
+  <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Apr 16, 2026 08:00:00").getTime();
+      
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+      
+        // Get today's date and time
+        var now = new Date().getTime();
+          
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+          
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+        // Output the result in an element with id="demo"
+        document.getElementById("countdown").innerHTML = days + " days " + hours + " hours "
+        + minutes + " minutes " + seconds + " seconds until BiGSAT 2026";
+          
+        // If the count down is over, write some text 
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "BiGSAT 2026 has started!";
+        }
+      }, 1000);
+  </script>
 
 </body>
 
@@ -99,7 +105,7 @@
     </div>
     &copy; BiGSAT-OC
     &nbsp;|&nbsp;
-    Website Template design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+    Website Template by <a href="https://github.com/mikepierce">Mike Pierce</a>
 </footer>
 
 </html>
