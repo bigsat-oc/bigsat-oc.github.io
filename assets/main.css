@@ -89,9 +89,9 @@ th,td{
 /* Navigation Links (Home, Registration, etc) */
 table.navigation{width:800px;}
 td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-td.navigation ul {display: none; position: absolute; list-style: none; margin: 0; padding: 0; width: 300px; left: 0;}
-td.navigation ul li {padding: 20px; float: left;}
-td.navigation ul li:hover > ul {position: absolute; display: block;}
+td.navigation ul {font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+td.navigation ul li {font-size:1.33em; padding: 0px 0px 0px 0px; float: left;display:none;}
+td.navigation ul:hover > li {position: absolute; display: block;}
 
 /* Sponsor Images */
 table.sponsors{width:800px;}
