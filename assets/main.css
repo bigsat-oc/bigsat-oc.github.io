@@ -6,9 +6,9 @@
  *   'Roboto',sans-serif; Font for the title text
  *   'Roboto-Slab',serif; Font for the body text 
  *   #fafafa; Background color of the site
- *   #505050; Foreground (text) color of the site //<span class="year">2026</span>
- *   #52739e; Navy, "Template" in the logo, current page in navigation, special titles in the Program //<span class="title2">GSAT</span>
- *   #b2132e; Reddish, "Conference" in the logo, hover color for links //<span class="title1">Bi</span>
+ *   #505050; Foreground (text) color of the site 
+ *   #52739e; Navy, "Template" in the logo, current page in navigation, special titles in the Program
+ *   #b2132e; Reddish, "Conference" in the logo, hover color for links
  *   #813c54; Heading color, titles in the Program
  *   #b8860b; Dark Goldenrod, color for links //-> #067a89 dark teal
  */
@@ -85,12 +85,12 @@ th,td{
 /* Navigation Links (Home, Registration, etc) */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #000639;
 }
 
 .navbar a {
   float: left;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -103,7 +103,7 @@ th,td{
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 18px;  
   border: none;
   outline: none;
   color: white;
@@ -114,7 +114,7 @@ th,td{
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #067a89;
 }
 
 .dropdown-content {
