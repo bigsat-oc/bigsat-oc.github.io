@@ -2,19 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <!-- replace WEBSITE with the address where this site is being hosted -->
    <url>
-       <loc>https://bigsat-oc.github.io/</loc>
+       <loc>https://bigsat.ca</loc>
    </url>
    <url>
-       <loc>https://bigsat-oc.github.io/events</loc>
+       <loc>https://bigsat.ca/registration</loc>
    </url>
    <url>
-       <loc>https://bigsat-oc.github.io/schedule</loc>
+       <loc>https://bigsat.ca/conference/keynote</loc>
    </url>
    <url>
-       <loc>https://bigsat-oc.github.io/direction</loc>
+       <loc>https://bigsat.ca/conference/faculties</loc>
    </url>
    <url>
-       <loc>https://bigsat-oc.github.io/team</loc>
+       <loc>https://bigsat.ca/conference/students</loc>
+   </url>
+   <url>
+       <loc>https://bigsat.ca/conference/sponsors</loc>
+   </url>
+   <url>
+       <loc>https://bigsat.ca/schedule</loc>
+   </url>
+   <url>
+       <loc>https://bigsat.ca/directions</loc>
+   </url>
+   <url>
+       <loc>https://bigsat.ca/about/bigsat</loc>
+   </url>
+   <url>
+       <loc>https://bigsat.ca/about/oc</loc>
+   </url>
+   <url>
+       <loc>https://bigsat.ca/about/directors</loc>
    </url>
 </urlset> 
 

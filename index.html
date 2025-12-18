@@ -2,11 +2,10 @@
 <html lang='en'>
 
 <head>
-    <base href=".">
-    <link rel="shortcut icon" type="image/png" href="assets/logo.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <title>BiGSAT | Home</title>
- 
+  <base href=".">
+  <link rel="shortcut icon" type="image/png" href="assets/logo.png"/>
+  <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+  <title>BiGSAT | Home</title>
 </head>
 
 <body>
@@ -17,27 +16,28 @@
 
   <div class="navbar">
     <a href=".">Home</a>
-    <a href="register/register.html">Register</a>
+    <a href="registration">Registration</a>
     <div class="dropdown">
-      <button class="dropbtn">Event Details 
+      <button class="dropbtn">Conference
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="eventdetails/keynote.html">Keynote</a>
-        <a href="eventdetails/concurrent-sess.html">Concurrent Sessions</a>
-        <a href="eventdetails/sponsors.html">Sponsors</a>
+        <a href="conference/keynote">Keynote</a>
+        <a href="conference/faculties">Faculties</a>
+        <a href="conference/students">Students</a>
+        <a href="conference/sponsors">Sponsors</a>
       </div>
     </div> 
-    <a href="schedule/schedule.html">Schedule</a>
-    <a href="directions/directions.html">Directions</a>
+    <a href="schedule">Schedule</a>
+    <a href="directions">Directions</a>
     <div class="dropdown">
       <button class="dropbtn">About
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="about/about.html">What is BiGSAT?</a>
-        <a href="about/oc.html">Organization Committee</a>
-        <a href="about/directors.html">Program Directors</a>
+        <a href="about/bigsat">What is BiGSAT?</a>
+        <a href="about/oc">Organization Committee</a>
+        <a href="about/directors">Program Directors</a>
       </div>
     </div>
     <div class="dropdown">
@@ -84,23 +84,76 @@
       }, 1000);
   </script>
 
+  <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <img src="assets/slides/savethedate_sq.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="assets/slides/keynote_sq.png" style="width:100%">
+    </div>
+    
+  </div>
+  
+  <br>
+    
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+    
+  <script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+  }
+  </script>
+
+  <h2>
+    Students from the <a href="https://www.bioinformatics.ubc.ca/">Bioinformatics (BIOF)</a> and <a href="https://www.gsat.ubc.ca/">Genome Science and Technology (GSAT)</a> graduate programs at the University of British Columbia are pleased to present their 16th Annual Research Day on Thursday, April 16, 2026, at the Life Science Insitute. At this event, over 150 graduate students from both programs will come together to present their research and attend seminars led by invited academic and industry professionals.
+  </h2>
+
+  <h1>
+    Our Sponsors
+  </h1>
+
+  <h2>
+    Coming soon!
+  </h2>
+
 </body>
 
 <footer>
     <div class="social-icons">
-    <a href="mailto:bigsat.oc@gmail.com"  title="email"> 
+    <a href="mailto:bigsat.oc@gmail.com"> 
       <i class="fa fa-square-envelope" aria-hidden="true"></i>
     </a>
-    <a href="https://www.facebook.com/BIGresearchday/"  title="facebook"> 
+    <a href="https://www.facebook.com/BIGresearchday/"> 
       <i class="fa-brands fa-facebook-square" aria-hidden="true"></i>
     </a>
     <a href="https://x.com/ResearchBig" title="twitter"> 
       <i class="fa-brands fa-square-x-twitter" aria-hidden="true"></i>
     </a>
-    <a href="https://www.instagram.com/bigsat.26/" title="instagram">  
+    <a href="https://www.instagram.com/bigsat.26/">  
       <i class="fa-brands fa-instagram-square" aria-hidden="true"></i>
     </a>
-    <a href="https://ca.linkedin.com/in/bigsat-research-day-b8b1852b0" title="linkedin">
+    <a href="https://ca.linkedin.com/in/bigsat-research-day-b8b1852b0">
       <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
     </a>
     </div>
