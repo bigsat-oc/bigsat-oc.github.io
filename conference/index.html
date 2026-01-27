@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <base href="..">
+  <link rel="shortcut icon" type="image/png" href="assets/logo.png"/>
+  <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+  <title>BiGSAT | Keynote</title>
+</head>
+
+<body>
+  
+  <div class="banner">
+    <img src="assets/banner.png">
+  </div>
+  
+  <div class="navbar">
+    <a href=".">Home</a>
+    <a href="registration">Registration</a>
+    <a href="conference">Conference</a>
+    <a href="schedule">Schedule</a>
+    <a href="directions">Directions</a>
+    <div class="dropdown">
+      <button class="dropbtn">About
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="about/bigsat">What is BiGSAT?</a>
+        <a href="about/oc">Organization Committee</a>
+        <a href="about/directors">Program Directors</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Past Events
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href=".">2026</a>
+        <a href="https://bigsat-oc.github.io/bigsite-archive/" target="_blank">2016-2025 (BIG Research Day)</a>
+      </div>
+    </div> 
+  </div>
+
+  <!-- Tab links -->
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Keynote')"  id="defaultTab">Keynote</button>
+    <button class="tablinks" onclick="openTab(event, 'Faculties')">Faculties</button>
+    <button class="tablinks" onclick="openTab(event, 'Students')">Students</button>
+    <button class="tablinks" onclick="openTab(event, 'Sponsors')">Sponsors</button>
+  </div>
+
+  <!-- Tab content -->
+  <div id="Keynote" class="tabcontent">
+    <h1>
+      BiGSAT 2026 Keynote
+    </h1>
+    
+    <h2>
+      Dr. Jesse Gillis, PhD<br>
+      Associate Professor of Integrative Physiology<br>
+      University of Toronto
+    </h2>
+  
+    <img src="assets/slides/keynote_sq.png" style="width:70%">
+  
+    <h3>
+      Dr. Gillis is an expert in integrated neurophysiology at the Donnelly Centre in the University of Toronto. His <a href="https://thedonnellycentre.utoronto.ca/faculty/jesse-gillis" target="_blank">lab</a> focuses on characterizing the flow of information from cellular gene networks to whole organism phenotypes across species using functional genomics data, focused primarily on the brain.
+    </h3>
+  </div>
+
+  <div id="Faculties" class="tabcontent">
+    <h1>
+      Faculty Talks
+    </h1>
+  
+    <h2>Coming soon!</h2>
+  </div>
+
+  <div id="Students" class="tabcontent">
+    <h1>
+      Student Talks
+    </h1>
+  
+    <h2>Coming soon!</h2>
+  </div>
+
+  <div id="Sponsors" class="tabcontent">
+    <h1>
+      Sponsor Talks
+    </h1>
+  
+    <h2>Coming soon!</h2>
+  </div>
+
+  <script>
+    document.getElementById("defaultTab").click();
+    function openTab(evt, tabName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+    
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+    
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+    
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+
+</body>
+
+<footer>
+  <div class="social-icons">
+  <a href="mailto:bigsat.oc@gmail.com"> 
+    <i class="fa fa-square-envelope" aria-hidden="true"></i>
+  </a>
+  <a href="https://www.facebook.com/BIGresearchday/" target="_blank"> 
+    <i class="fa-brands fa-facebook-square" aria-hidden="true"></i>
+  </a>
+  <a href="https://x.com/ResearchBig" target="_blank"> 
+    <i class="fa-brands fa-square-x-twitter" aria-hidden="true"></i>
+  </a>
+  <a href="https://www.instagram.com/bigsat.26/" target="_blank">  
+    <i class="fa-brands fa-instagram-square" aria-hidden="true"></i>
+  </a>
+  <a href="https://ca.linkedin.com/in/bigsat-research-day-b8b1852b0" target="_blank">
+    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+  </a>
+  </div>
+  &copy; BiGSAT-OC
+  &nbsp;|&nbsp;
+  Website Template by <a href="https://github.com/mikepierce" target="_blank">Mike Pierce</a>
+</footer>
+
+</html>

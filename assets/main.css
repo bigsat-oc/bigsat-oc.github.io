@@ -195,9 +195,72 @@ img {vertical-align: middle;}
 }
 
 /* Sponsor Images */
-table.sponsors{width:800px;}
-td.sponsor{white-space:nowrap; width:33%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-td.sponsor img{width: 100%}
+.sponsors {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sponsor-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.sponsor-row a {
+  width: 800px;
+  text-align: center;
+}
+
+.sponsor-row img {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Conference tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 0.5s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
 /* The Table on the Program Page */
 td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
