@@ -44,11 +44,11 @@ a.current{color: #52739e;}
 a.current:hover{color: #e82945;}
 a:hover{color: #b2132e;}
 a:active{color: #e82945;}
-h1,h2,h3,h4{clear:left; color: #067a89; margin:1.5em 0em 1em 0em; font-family:'Lexend Deca',sans-serif;line-height: 1.8em;}
-h1{font-size:2.67em;}
+h1,h2,h3,h4{clear:left; color: #08b3a1; margin:1.5em 0em 1em 0em; font-family:'Lexend Deca',sans-serif;line-height: 1.8em;}
+h1{font-size:2.67em; color: #067a89}
 h2{font-size:2.00em;}
 h3{font-size:1.67em;}
-h4{font-size:1.33em;}
+h4{font-size:1.33em; color: #000639}
 p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
 li a, p a {text-decoration:underline; text-decoration-color:#b8860b;}
 /*ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; text-align:left;}
