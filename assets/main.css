@@ -213,8 +213,9 @@ img {vertical-align: middle;}
 }
 
 .sponsor-row img {
-  width: 100%;
-  max-width: 400px;
+  width: 360px;
+  height: 180px;
+  object-fit: contain;
 }
 
 /* Conference tab */
