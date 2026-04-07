@@ -269,6 +269,7 @@ td.index{white-space:nowrap; width:130px; text-align:right; vertical-align:top; 
 td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: #813c54; height:32px; font-family:'Lexend Deca',sans-serif; text-shadow: 1px 1px 2px #d0d0d0; }
 td.speaker{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px}
 td.keywords{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px}
+td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px}
 
 /* Registration iframe */
 iframe.registration{display:block; margin:1em auto 2em auto; width:800px; height:800px; border:none;}
