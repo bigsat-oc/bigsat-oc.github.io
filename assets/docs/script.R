@@ -27,8 +27,8 @@ df = read.csv("./assets/docs/symposia.csv", colClasses = "character")
 writeLines(sprintf(
   '<table id="%s">
   <tr>
-    <td class="index" rowspan="4">
-      %s
+    <td class="index" rowspan="3">
+      <img src="assets/logo.png" style="width:100%%">
     </td>
     <td class="title">
       %s
@@ -40,25 +40,20 @@ writeLines(sprintf(
     </td>
   </tr>
   <tr>
-    <td class="room">
-      %s (%s)
-    </td>
-  </tr>
-  <tr>
     <td class="keywords">
       %s
     </td>
   </tr>
 </table>',
-  df$Index, df$Index, df$Abstract.Title, df$Name, df$Author.List, df$Location, df$Stream, df$Abstract.Keywords
+  df$Index, df$Abstract.Title, df$Name, df$Author.List, df$Abstract.Keywords
 ),"symposia.html")
 
 df = read.csv("./assets/docs/speedtalks.csv", colClasses = "character")
 writeLines(sprintf(
   '<table id="%s">
   <tr>
-    <td class="index" rowspan="4">
-      %s
+    <td class="index" rowspan="3">
+      <img src="assets/logo.png" style="width:100%%">
     </td>
     <td class="title">
       %s
@@ -70,15 +65,11 @@ writeLines(sprintf(
     </td>
   </tr>
   <tr>
-    <td class="room">
-      %s (%s)
-    </td>
-  </tr>
-  <tr>
     <td class="keywords">
       %s
     </td>
   </tr>
 </table>',
-  df$Index, df$Index, df$Abstract.Title, df$Name, df$Author.List, df$Location, df$Stream, df$Abstract.Keywords
+  df$Index, df$Abstract.Title, df$Name, df$Author.List, df$Abstract.Keywords
 ),"speedtalks.html")
+
