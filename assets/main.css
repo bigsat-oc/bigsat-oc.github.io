@@ -142,6 +142,29 @@ th,td{
   display: block;
 }
 
+/* button */
+.myButton {
+	box-shadow:inset 0px 1px 10px 0px #08b3a2;
+	background:linear-gradient(to bottom, #067a89 5%, #000639 100%);
+	border-radius:20px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+	font-weight:bold;
+	padding:20px 40px;
+	text-decoration:none;
+  margin: 1%;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #000639 5%, #067a89 100%);
+	background-color:#000639;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
 /* Slideshow */
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
