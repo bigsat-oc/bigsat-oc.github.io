@@ -1,18 +1,5 @@
 /* main.css */
 
-/* These are the colors and fonts used throughout the webpage.
- * I've listed them here so that a user may easily
- * do a search-and-replace for these to change the site theme.
- *   'Roboto',sans-serif; Font for the title text
- *   'Roboto-Slab',serif; Font for the body text 
- *   #fafafa; Background color of the site
- *   #505050; Foreground (text) color of the site 
- *   #52739e; Navy, "Template" in the logo, current page in navigation, special titles in the Program
- *   #b2132e; Reddish, "Conference" in the logo, hover color for links
- *   #813c54; Heading color, titles in the Program
- *   #b8860b; Dark Goldenrod, color for links //-> #067a89 dark teal
- */
-
 @import url('https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.css');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&display=swap');
@@ -51,8 +38,7 @@ h3{font-size:1.67em;}
 h4{font-size:1.33em; color: #000639}
 p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
 li a, p a {text-decoration:underline; text-decoration-color:#b8860b;}
-/*ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; text-align:left;}
-ul li{list-style:none; margin:0px auto 0px auto; padding:0px; text-align:left;}*/
+
 i,em{font-style:italic;}
 b,strong{font-weight:bold;}
 sup{
@@ -175,31 +161,6 @@ img {vertical-align: middle;}
   max-width: 600px;
   position: relative;
   margin: auto;
-}
-
-/* Caption */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
 }
 
 .fade {

@@ -73,3 +73,4 @@ writeLines(sprintf(
   df$Index, df$Abstract.Title, df$Name, df$Author.List, df$Abstract.Keywords
 ),"speedtalks.html")
 
+writeLines(sprintf('<img src="assets/%s" width="400px">', list.files(path = "./assets/gallery", full.names = FALSE, recursive = TRUE)), "gallery.html")
